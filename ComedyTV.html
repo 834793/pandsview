@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Plain and Simple.</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  margin: 20px;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('plainandsimple_mini.png');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  width: 95%;
+  font-size: 12px;
+  margin: 32px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 0px;
+}
+
+
+#myTable {
+  border-collapse: collapse;
+  width: 95%;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin: 32px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 10px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<br>
+
+<header>
+<a href="index.html">
+<img src="plainandsimple_crop.png" alt="Plain and Simple" style="width:100x;height:100px;">
+</a>
+</header>
+<br>
+<div class="navbar">
+    <a href="About.html">About</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Movies 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Comedy.html">Comedy</a>
+      <a href="Horror.html">Horror</a>
+      <a href="Documentary.html">Documentary</a>
+      <a href="Mystery_SciFi.html">Sci-Fi/Mystery</a>
+      <a href="Action_Thriller.html">Action/Thriller </a>
+      <a href="Drama.html">Drama</a>
+    </div>
+  </div>
+ 
+  <div class="dropdown">
+    <button class="dropbtn">TV Shows
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="ComedyTV.html">Comedy</a>
+      <a href="HorrorTV.html">Horror</a>
+      <a href="DocumentaryTV.html">Documentary</a>
+      <a href="Mystery_SciFiTV.html">Sci-Fi/Mystery</a>
+      <a href="Action_ThrillerTV.html">Action/Thriller </a>
+      <a href="Drama.html"TV">Drama</a>
+    </div>
+  </div>
+    <a href="index.html">Home</a>
+</div>
+
+
+<br>
+
+<h2>Comedy TV</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for name or rating.." title="Search TV">
+
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:30%;">Name</th>
+    <th style="width:20%;">Rating</th>
+    <th style="width:20%;">Genre</th>
+  </tr>
+  <tr>
+    <td>Superstore</td>
+    <td><a title="Not easy to get into, but hooks you in">Ok</td>	
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Modern Family</td>
+    <td><a title="Decent background noise">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Family Guy</td>
+    <td><a title="Pound for Pound bests Cartoon">Good</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>How I met your mother</td>
+    <td><a title="Not bad">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>The Office</td>
+    <td><a title="Took awhile to like, but then loved">Good</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Seinfeld</td>
+    <td><a title="No soup for you">Excellent</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Brooklyn Nine-Nine</td>
+    <td><a title="Gets better, then worse">Good</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Shameless</td>
+    <td><a title="Some stomache turning moments">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Simpsons</td>
+    <td><a title="90's Simpsons is hilarious, but it fell apart for awhile">Good</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>South Park</td>
+    <td><a title="Very Very Hit or miss- some garbage">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Glow</td>
+    <td><a title="Not too shabby">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Atpyical</td>
+    <td><a title="Kinda sad, I enjoyed">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Son of Zorn</td>
+    <td><a title="I can see incoming disagreements">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Kim's Convenience</td>
+    <td><a title="Way better than Corner Gas">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>The Good Place</td>
+    <td><a title="Interesting Story">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Big Mouth</td>
+    <td><a title="Pretty Bad">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Schitt$ Creek</td>
+    <td><a title="Nope. Didnt make the cut.">Garbage</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Corner Gas</td>
+    <td><a title="Too dry">Garbage</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Lucifer</td>
+    <td><a title="Barely">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Flaked</td>
+    <td><a title="Barely">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Living with Yourself</td>
+    <td><a title="Interesting story">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Master of None</td>
+    <td><a title="Loud comedy">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Swedish Dicks</td>
+    <td><a title="Watchable, kinda good">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Cobra Kai</td>
+    <td><a title="Not much more you could do to make Karate Kid series good">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Truth Seeker</td>
+    <td><a title="Watchable, kinda good">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>3rd Rock from the Sun</td>
+    <td><a title="Kind dumb alien show">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Friends</td>
+    <td><a title="My wife made me put good">Good</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Fraiser</td>
+    <td><a title="The worst.">Garbage</td>
+    <td>Comedy</td>
+  </tr>
+   <tr>
+    <td>Fraiser</td>
+    <td><a title="The worst.">Garbage</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Bobs Burgers</td>
+    <td><a title="The worst cartoon">Garbage</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>F is for Family</td>
+    <td><a title="Graphic but ok">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Big Bang Theory</td>
+    <td><a title="Its a last resort">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Two Broke Girls</td>
+    <td><a title="Wachable">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>Malcom in the Middle/td>
+    <td><a title="Funny old family show>Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>King of Queens</td>
+    <td><a title="Better than most sitcoms">Good</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>The Crew</td>
+    <td><a title="Racecarshow that grows on you">Ok</td>
+    <td>Comedy</td>
+  </tr>
+  <tr>
+    <td>The Tick</td>
+    <td><a title="Might go watch right now">Ok</td>
+    <td>Comedy</td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td");
+	if(td.length > 0){ // to avoid th
+        if (td[0].innerHTML.toUpperCase().indexOf(filter) > -1 || td[1].innerHTML.toUpperCase().indexOf(filter) > -1) {
+         tr[i].style.display = "";
+       } else {
+         tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
