@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 <head>
     <title>Login page</title>
@@ -9,20 +9,18 @@
     <input type="password" id="pswd">
     <input type="button" value="Submit" onclick="checkPswd();" />
 </form>
-<!--Nicely done! You found the password in the source code :p Enjoy! -->
+<!--Function to check password the already set password is admin-->
 <script type="text/javascript">
     function checkPswd() {
-        var confirmPassword = "viewpagesource";
+        var confirmPassword = "admin";
         var password = document.getElementById("pswd").value;
         if (password == confirmPassword) {
-             window.location="239r89dj2encurb3uofnmomsdjbfuvreobnvpomwsdjbrh3wpcm.html";
+             window.location="welcome.html";
         }
         else{
             alert("Passwords do not match.");
         }
     }
 </script>
-    
-
 </body>
 </html>
