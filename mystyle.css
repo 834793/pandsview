@@ -1,0 +1,105 @@
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left:auto; 
+  margin-right:auto;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  margin: 20px;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left; 
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('plainandsimple_mini.PNG');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  width: 95%;
+  font-size: 12px;
+  margin: 32px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 0px;
+}
+
+
+#myTable {
+  border-collapse: collapse;
+  width: 95%;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin: 32px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 10px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
