@@ -74,7 +74,7 @@
   background-image: url('plainandsimple_mini.PNG');
   background-position: 0px 0px;
   background-repeat: no-repeat;
-  width: 95%;
+  width: 100%;
   font-size: 12px;
   margin: 32px;
   padding: 12px 20px 12px 40px;
@@ -85,7 +85,7 @@
 
 #myTable {
   border-collapse: collapse;
-  width: 95%;
+  width: 100%;
   border: 1px solid #ddd;
   font-size: 16px;
   margin: 32px;
