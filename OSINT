@@ -1,0 +1,48 @@
+<html>
+<body>
+
+<h2>US Record Search <font size="2"><i> - Name and Company </i></font></h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for name or rating.." title="Type Keyword">
+
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:30%;">State</th>
+    <th style="width:20%;">Description</th>
+    <th style="width:20%;">Additional Information</th>
+  </tr>
+	
+
+<tr><td>Alabama</td><td><a href="https://arc-sos.state.al.us/CGI/UCCNAME.MBR/INPUT">Debt by Name</a></td><td></td></tr>
+<tr><td>Alabama</td><td><a href="https://arc-sos.state.al.us/CGI/CORPAGENT.MBR/INPUT">Business by Name</a></td><td></td></tr>
+<tr><td>Alabama</td><td><a href="https://arc-sos.state.al.us/CGI/corpname.mbr/input">Business by Company</a></td><td></td></tr>
+
+
+
+	
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td");
+	if(td.length > 0){ // to avoid th
+        if (td[0].innerHTML.toUpperCase().indexOf(filter) > -1 || td[1].innerHTML.toUpperCase().indexOf(filter) > -1) {
+         tr[i].style.display = "";
+       } else {
+         tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
