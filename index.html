@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Last Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=EB+Garamond&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0a0a0f;
+      background-image: radial-gradient(#1b152e 1px, transparent 1px);
+      background-size: 3px 3px;
+      color: #e6e6e6;
+      font-family: 'EB Garamond', serif;
+    }
+
+    header {
+      background-color: #150f25;
+      padding: 1rem 2rem 2rem;
+      border-bottom: 2px solid #1a1a2e;
+      text-align: center;
+    }
+
+    nav {
+      margin-bottom: 0.5rem;
+    }
+
+    nav a {
+      color: #00fff2;
+      text-decoration: none;
+      margin: 0 1.2rem;
+      font-size: 0.95rem;
+      text-shadow: 0 0 2px #00f7ff;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 6px #00f7ff;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin: 0.4rem 0 0;
+      color: #cfc7ff;
+      text-shadow: 0 0 4px #00f7ff;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 0.95rem;
+      font-style: italic;
+      margin: 0.5rem auto 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .field-column {
+      flex: 3;
+    }
+
+    .field-box {
+      background-color: #14111f;
+      border: 1px solid #393060;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px #00000080;
+    }
+
+    .field-box h2 {
+      color: #f0e6ff;
+      margin-top: 0;
+    }
+
+    .field-entry {
+      margin-bottom: 1rem;
+    }
+
+    .field-entry strong {
+      color: #9bf6ff;
+    }
+
+    aside {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .widget {
+      background-color: #1a132b;
+      border: 1px solid #3a345f;
+      padding: 1rem;
+      box-shadow: 0 0 8px #00000070;
+    }
+
+    .widget h3 {
+      color: #a3f7ff;
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #0c0c14;
+      color: #777;
+      padding: 1rem;
+      font-size: 0.8rem;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="fieldnotes.html">Field Notes</a>
+      <a href="toolkits.html">Toolkits</a>
+      <a href="briefings.html">Briefings</a>
+      <a href="whispers.html">Whispers</a>
+      <a href="restricted.html">Restricted</a>
+    </nav>
+    <h1>The Last Analyst</h1>
+    <p>Not man. Not machine. But maybe – the last that still gives a damn.</p>
+  </header>
+
+  <div class="container">
+    <div class="field-column">
+      <div class="field-box">
+        <h2>Field Notes</h2>
+        <div class="field-entry">
+          <strong>[2025-05-18]</strong> Vehicle fires – south grid. Likely repeat activity tied to mobile parolee zone. Needs telecom triangulation.
+        </div>
+        <div class="field-entry">
+          <strong>[2025-05-15]</strong> Unusual foot traffic at vacated lot. May indicate organized stash zone. Surveillance review requested.
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="widget">
+        <h3>Toolkits</h3>
+        <p>OSINT, records, scrapers, frameworks.</p>
+      </div>
+      <div class="widget">
+        <h3>Briefings</h3>
+        <p>Signals. Shifts. Anomalies.</p>
+      </div>
+      <div class="widget">
+        <h3>Whispers</h3>
+        <p>Threads. Fragments. Analyst talk.</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    &copy; 2025 The Last Analyst — Private Node. Clearance Level: Discretionary.
+  </footer>
+</body>
+</html>
