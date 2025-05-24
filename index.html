@@ -2,8 +2,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Cinzel&family=Share+Tech+Mono&family=Staatliches&family=EB+Garamond&family=Unica+One&family=Teko&family=Oswald&family=Bebas+Neue&family=Audiowide&family=Roboto+Mono&family=Fira+Sans&family=Work+Sans&family=Quicksand&family=Karla&family=Barlow&family=Zilla+Slab&family=Overpass&family=Manrope&family=IBM+Plex+Sans&family=DM+Sans&family=Space+Grotesk&family=Crimson+Pro&family=Asap&family=Mukta&display=swap" rel="stylesheet">
+<script>
+  const fonts = ["'Orbitron', sans-serif", "'Cinzel', serif", "'Share Tech Mono', monospace", "'Staatliches', sans-serif", "'EB Garamond', serif", "'Unica One', sans-serif", "'Teko', sans-serif", "'Oswald', sans-serif", "'Bebas Neue', cursive", "'Audiowide', cursive", "'Roboto Mono', monospace", "'Fira Sans', sans-serif", "'Work Sans', sans-serif", "'Quicksand', sans-serif", "'Karla', sans-serif", "'Barlow', sans-serif", "'Zilla Slab', serif", "'Overpass', sans-serif", "'Manrope', sans-serif", "'IBM Plex Sans', sans-serif", "'DM Sans', sans-serif", "'Space Grotesk', sans-serif", "'Crimson Pro', serif", "'Asap', sans-serif", "'Mukta', sans-serif"];
+  const font = fonts[Math.floor(Math.random() * fonts.length)];
+  document.addEventListener("DOMContentLoaded", () => {
+    const title = document.getElementById("dynamic-title");
+    title.style.fontFamily = font;
+  });
+</script>
   <meta charset="UTF-8" />
-  <title>The Last Analyst</title>
+   <h1 id="dynamic-title">the last analyst.</h1>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=EB+Garamond&display=swap');
@@ -160,7 +169,7 @@
   </div>
 
   <footer>
-    &copy; 2025 The Last Analyst — Private Node. Clearance Level: Discretionary.
+    &copy; 2025 the last analyst. — Private Node. Clearance Level: Discretionary.
   </footer>
 </body>
 </html>
