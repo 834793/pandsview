@@ -2,6 +2,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Cinzel&family=Share+Tech+Mono&family=Staatliches&family=EB+Garamond&family=Unica+One&family=Teko&family=Oswald&family=Bebas+Neue&family=Audiowide&family=Roboto+Mono&family=Fira+Sans&family=Work+Sans&family=Quicksand&family=Karla&family=Barlow&family=Zilla+Slab&family=Overpass&family=Manrope&family=IBM+Plex+Sans&family=DM+Sans&family=Space+Grotesk&family=Crimson+Pro&family=Asap&family=Mukta&display=swap" rel="stylesheet">
+<script>
+  const fonts = ["'Orbitron', sans-serif", "'Cinzel', serif", "'Share Tech Mono', monospace", "'Staatliches', sans-serif", "'EB Garamond', serif", "'Unica One', sans-serif", "'Teko', sans-serif", "'Oswald', sans-serif", "'Bebas Neue', cursive", "'Audiowide', cursive", "'Roboto Mono', monospace", "'Fira Sans', sans-serif", "'Work Sans', sans-serif", "'Quicksand', sans-serif", "'Karla', sans-serif", "'Barlow', sans-serif", "'Zilla Slab', serif", "'Overpass', sans-serif", "'Manrope', sans-serif", "'IBM Plex Sans', sans-serif", "'DM Sans', sans-serif", "'Space Grotesk', sans-serif", "'Crimson Pro', serif", "'Asap', sans-serif", "'Mukta', sans-serif"];
+  const font = fonts[Math.floor(Math.random() * fonts.length)];
+  document.addEventListener("DOMContentLoaded", () => {
+    const title = document.getElementById("dynamic-title");
+    title.style.fontFamily = font;
+  });
+</script>
   <meta charset="UTF-8" />
   <title>Whispers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -45,8 +54,7 @@
     header h1 {
       font-size: 2.4rem;
       margin: 0.4rem 0 0;
-      color: #cfc7ff;
-      text-shadow: 0 0 4px #00f7ff;
+      color: #e6e6e6;
     }
 
     header p {
@@ -91,7 +99,7 @@
       <a href="whispers.html">Whispers</a>
       <a href="restricted.html">Restricted</a>
     </nav>
-    <h1>The Last Analyst</h1>
+    <h1 id="dynamic-title">the last analyst.</h1>
     <p>Not man. Not machine. But maybe – the last that still gives a damn.</p>
   </header>
   <main>
@@ -99,7 +107,7 @@
     <p>Community notes, forum discussions, and anonymous murmurs.</p>
   </main>
   <footer>
-    &copy; 2025 The Last Analyst — Observation Node Active
+    &copy; 2025 the last analyst. — Observation Node Active
   </footer>
 </body>
 </html>
