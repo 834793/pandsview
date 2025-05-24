@@ -1,44 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> the last analyst. </title>
-<link rel="stylesheet" href="disinforme.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Cinzel&family=Share+Tech+Mono&family=Staatliches&family=EB+Garamond&family=Unica+One&family=Teko&family=Oswald&family=Bebas+Neue&family=Audiowide&family=Roboto+Mono&family=Fira+Sans&family=Work+Sans&family=Quicksand&family=Karla&family=Barlow&family=Zilla+Slab&family=Overpass&family=Manrope&family=IBM+Plex+Sans&family=DM+Sans&family=Space+Grotesk&family=Crimson+Pro&family=Asap&family=Mukta&display=swap" rel="stylesheet">
+<script>
+  const fonts = ["'Orbitron', sans-serif", "'Cinzel', serif", "'Share Tech Mono', monospace", "'Staatliches', sans-serif", "'EB Garamond', serif", "'Unica One', sans-serif", "'Teko', sans-serif", "'Oswald', sans-serif", "'Bebas Neue', cursive", "'Audiowide', cursive", "'Roboto Mono', monospace", "'Fira Sans', sans-serif", "'Work Sans', sans-serif", "'Quicksand', sans-serif", "'Karla', sans-serif", "'Barlow', sans-serif", "'Zilla Slab', serif", "'Overpass', sans-serif", "'Manrope', sans-serif", "'IBM Plex Sans', sans-serif", "'DM Sans', sans-serif", "'Space Grotesk', sans-serif", "'Crimson Pro', serif", "'Asap', sans-serif", "'Mukta', sans-serif"];
+  const font = fonts[Math.floor(Math.random() * fonts.length)];
+  document.addEventListener("DOMContentLoaded", () => {
+    const title = document.getElementById("dynamic-title");
+    title.style.fontFamily = font;
+  });
+</script>
+  <meta charset="UTF-8" />
+  <title>the last analyst.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=EB+Garamond&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0a0a0f;
+      background-image: radial-gradient(#1b152e 1px, transparent 1px);
+      background-size: 3px 3px;
+      color: #e6e6e6;
+      font-family: 'EB Garamond', serif;
+    }
+
+    header {
+      background-color: #150f25;
+      padding: 1rem 2rem 2rem;
+      border-bottom: 2px solid #1a1a2e;
+      text-align: center;
+    }
+
+    nav {
+      margin-bottom: 0.5rem;
+    }
+
+    nav a {
+      color: #00fff2;
+      text-decoration: none;
+      margin: 0 1.2rem;
+      font-size: 0.95rem;
+      text-shadow: 0 0 2px #00f7ff;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 6px #00f7ff;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin: 0.4rem 0 0;
+      color: ##e6e6e6;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 0.95rem;
+      font-style: italic;
+      margin: 0.5rem auto 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .field-column {
+      flex: 3;
+    }
+
+    .field-box {
+      background-color: #14111f;
+      border: 1px solid #393060;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px #00000080;
+    }
+
+    .field-box h2 {
+      color: #f0e6ff;
+      margin-top: 0;
+    }
+
+    .field-entry {
+      margin-bottom: 1rem;
+    }
+
+    .field-entry strong {
+      color: #9bf6ff;
+    }
+
+    aside {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .widget {
+      background-color: #1a132b;
+      border: 1px solid #3a345f;
+      padding: 1rem;
+      box-shadow: 0 0 8px #00000070;
+    }
+
+    .widget h3 {
+      color: #a3f7ff;
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+      table, th, td {
+         border: hidden;
+    }
+	  
+    footer {
+      text-align: center;
+      background-color: #0c0c14;
+      color: #777;
+      padding: 1rem;
+      font-size: 0.8rem;
+      border-top: 1px solid #222;
+    }
+	  
+  </style>
 </head>
 <body>
+  <header>
+    <nav>
+      <a href="fieldnotes.html">Field Notes</a>
+      <a href="toolkits.html">Toolkits</a>
+      <a href="briefings.html">Briefings</a>
+      <a href="whispers.html">Whispers</a>
+      <a href="restricted.html">Restricted</a>
+    </nav>
+    <h1 id="dynamic-title">the last analyst.</h1>
+    <p>Not man. Not machine. But maybe – the last that still gives a damn.</p>
+  </header>
 
-    <style>
-table, th, td {
-  border: hidden;
-}
-</style>
-
-<br>
-
-<header>
-<a href="index.html">
-<img src="disinforme_crop.PNG" alt="DISINFOR.ME" style="width:200x;height:200px;">
-</a>
-</header>
-<br>
-<div class="navbar">
-   <a href="index.html">Back</a>
-  
-<div class="dropdown">
-    <button class="dropbtn">Menu 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="publicrecords.html">Public Records</a>
-      <a href="resources.html">Resources</a>
-    </div>
-  </div>
-  
-   
-</div>
-	
-<br>
-
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for keyword.." title="Type Keyword">
+	<br>
+	<p> <b> NCSC:</b> <i>https://www.ncsc.org/topics/access-and-fairness/privacy-public-access-to-court-records/state-links5</i> </p>
+	<p> <b> LLC University: </b> <i>https://www.llcuniversity.com/50-secretary-of-state-sos-business-entity-search</i> </p>
+	<p> <b> Blackbook:</b> <i>https://www.blackbookonline.info </i></p>
+	<p><b> BRB Publications: </b> <i> https://www.brbpublications.com/freeresources/Pubrecsites.aspx </i> </p>
+ <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for keyword.." title="Type Keyword">
 
 
 <table id="myTable">
@@ -449,13 +559,9 @@ table, th, td {
 	
 </table>
 
-	
-	
-	<p> <b> NCSC:</b> <i>https://www.ncsc.org/topics/access-and-fairness/privacy-public-access-to-court-records/state-links5</i> </p>
-	<p> <b> LLC University: </b> <i>https://www.llcuniversity.com/50-secretary-of-state-sos-business-entity-search</i> </p>
-	<p> <b> Blackbook:</b> <i>https://www.blackbookonline.info </i></p>
-	<p><b> BRB Publications: </b> <i> https://www.brbpublications.com/freeresources/Pubrecsites.aspx </i> </p>
-	
+  <footer>
+    &copy; 2025 the last analyst. — Private Node. Clearance Level: Discretionary.
+  </footer>
 <script>
 function myFunction() {
   var input, filter, table, tr, td, i, txtValue;
@@ -479,3 +585,18 @@ for (i = 0; i < tr.length; i++) {
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+	
+
