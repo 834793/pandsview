@@ -1,21 +1,8 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Restricted Access</title>
-  <script>
-    function unlock() {
-      var pass = prompt("Enter access code:");
-      if (pass === "openanalyst") {
-        window.location.href = "secret.html";
-      } else {
-        alert("Access denied.");
-      }
-    }
-  </script>
-</head>
-<body onload="unlock()" style="background-color:#0a0a0f; color:#e6e6e6; font-family:'EB Garamond', serif; text-align:center; padding:100px;">
-  <h1>Authenticating...</h1>
-  <noscript>JavaScript required for access control.</noscript>
-</body>
-</html>
+<script>
+  const pass = prompt("Enter passphrase:");
+  if (pass === "openanalyst") {
+    window.location.href = "https://thelastanalyst.flarum.cloud/";
+  } else {
+    document.body.innerHTML = "<h1 style='color:red;text-align:center;'>Access Denied</h1>";
+  }
+</script>
