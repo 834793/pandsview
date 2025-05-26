@@ -12,7 +12,7 @@
   });
 </script>
   <meta charset="UTF-8" />
-  <title>Secret Archive</title>
+  <title>Whispers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
@@ -85,6 +85,7 @@
     }
     .whisper {
       background-color: #ffffff;
+      color: #0a0a0f;
       padding: 1rem;
       margin-bottom: 1.5rem;
       border: 1px solid #3a345f;
@@ -132,15 +133,6 @@
     <p>Not man. Not machine. But maybe – the last that still gives a damn.</p>
   </header>
   <div class="container">
-    <h2 style="margin-top: 2rem;">Drop a Whisper</h2>
-<!-- embed here -->
-<div style="max-width: 100%; overflow-x: auto; padding: 1rem 0;">
-<form action="https://formsubmit.co/42d70c7d7ba16ff3ab3eb7b5f80d4c8d" method="POST">
-  <textarea name="whisper" placeholder="Drop your whisper..." required></textarea>
-  <input type="hidden" name="_captcha" value="false">
-  <button type="submit">Send</button>
-</form>
-</div>
     <div id="whispers"></div>
   </div>
   <script>
